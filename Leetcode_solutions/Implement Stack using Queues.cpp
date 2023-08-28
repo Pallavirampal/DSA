@@ -6,13 +6,9 @@ public:
     MyStack() {
         
     }
-    
-    /** Push element x onto stack. */
     void push(int x) {
         q1.push(x);
     }
-    
-    /** Removes the element on top of the stack and returns that element. */
     int pop() {
         while(q1.size() > 1){
             q2.push(q1.front());
